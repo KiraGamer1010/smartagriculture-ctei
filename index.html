@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="SmartAgriculture, portafolio digital universitario sobre SmartRovert, robot agrícola autónomo para monitoreo inteligente de cultivos en la Sabana Norte de Cundinamarca.">
+  <title>SMARTAGRICULTURE | Portafolio Digital</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor-light" aria-hidden="true"></div>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="SmartAgriculture inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 3.5 27.2 10v12L16 28.5 4.8 22V10L16 3.5Z"></path>
+            <path
+              d="M10.8 17.2c4.8.1 8.2-2.3 10.4-7.1 1.3 5-.5 9.5-4.8 12.7-2.4-2.2-4.2-3.6-7.2-3.5.4-.7.9-1.4 1.6-2.1Z">
+            </path>
+          </svg>
+        </span>
+        <span>SmartAgriculture</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      
+      <div class="nav-menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#problema">Problema</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#documentacion">Docs</a>
+        <a href="pages/marco-logico.html">Marco lógico</a>
+        <a href="pages/matrices.html">Matrices</a>
+        <a href="pages/metodologia.html">Metodología</a>
+        <a href="#galeria">Galería</a>
+        <a href="#impacto">Impacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-background" aria-hidden="true">
+        <span class="tech-line line-a"></span>
+        <span class="tech-line line-b"></span>
+        <span class="tech-line line-c"></span>
+        <div class="particle-field" id="particleField"></div>
+      </div>
+
+      <div class="hero-grid container">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Portafolio digital del anteproyecto</span>
+          <h1>SMART
+            AGRICULTURE</h1>
+          <p class="hero-subtitle">Sistema autónomo de monitoreo agrícola inteligente basado en IoT, visión artificial y
+            robótica aplicada.</p>
+          <p class="hero-description">
+            SmartRovert es una propuesta agrotech académica para monitorear cultivos 24/7,
+            detectar alertas tempranas, optimizar recursos hídricos y convertir datos de campo
+            en decisiones agrícolas más precisas para la Sabana Norte de Cundinamarca.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#documentacion">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+              Ver propuesta
+            </a>
+            <a class="btn btn-secondary" href="#galeria">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z"></path>
+                <path d="m4 15 4-4 4 4 3-3 5 5"></path>
+                <circle cx="15" cy="8" r="1"></circle>
+              </svg>
+              Ver SmartRovert
+            </a>
+          </div>
+        </div>
+
+        <aside class="quick-card reveal reveal-delay" aria-label="Ficha rápida del proyecto">
+          <div class="quick-card-glow" aria-hidden="true"></div>
+          <div class="quick-card-header">
+            <span class="status-dot"></span>
+            <div>
+              <p>Ficha rápida</p>
+              <strong>SmartRovert / Sistema agrícola autónomo</strong>
+            </div>
+          </div>
+
+          <div class="rover-panel" aria-hidden="true">
+            <div class="rover-orbit"></div>
+            <svg class="rover-visual" viewBox="0 0 420 220" role="img"
+              aria-label="Visual técnico del robot SmartRovert">
+              <defs>
+                <linearGradient id="roverGrad" x1="40" x2="360" y1="40" y2="180" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#66BB6A"></stop>
+                  <stop offset="1" stop-color="#42A5F5"></stop>
+                </linearGradient>
+              </defs>
+              <path class="scan-path"
+                d="M36 50C94 16 138 82 194 58c52-22 83-47 142-14 36 20 45 60 32 92-17 43-70 58-125 43-60-16-98-2-143 11-59 17-105-29-92-79 5-21 15-44 28-61Z">
+              </path>
+              <g class="sensor-rays">
+                <path d="M250 64 326 38"></path>
+                <path d="M255 78 346 74"></path>
+                <path d="M250 92 326 122"></path>
+              </g>
+              <g class="rover-body">
+                <rect x="112" y="96" width="178" height="50" rx="15"></rect>
+                <rect x="153" y="66" width="96" height="38" rx="12"></rect>
+                <rect x="180" y="43" width="42" height="28" rx="10"></rect>
+                <circle cx="141" cy="154" r="27"></circle>
+                <circle cx="260" cy="154" r="27"></circle>
+                <circle cx="141" cy="154" r="10"></circle>
+                <circle cx="260" cy="154" r="10"></circle>
+                <path d="M198 43V22M174 84h49M119 121h162"></path>
+                <circle cx="199" cy="22" r="7"></circle>
+              </g>
+              <g class="plant-lines">
+                <path d="M62 176c11-22 30-22 41 0M79 176V139M79 151c-16-15-25-9-32 4M80 160c19-17 30-8 38 5"></path>
+                <path d="M314 178c11-23 30-23 41 0M332 178v-41M331 152c-16-16-27-9-34 5M333 160c18-17 31-8 38 6"></path>
+              </g>
+            </svg>
+          </div>
+
+          <ul class="quick-list">
+            <li><span>Autores</span><strong>Juan Esteban Castiblanco Rodríguez<br>Cristian Mauricio Muñoz
+                Prieto</strong></li>
+            <li><span>Programa</span><strong>Ingeniería de Sistemas y Computación</strong></li>
+            <li><span>Institución</span><strong>Universidad de Cundinamarca</strong></li>
+            <li><span>Ubicación</span><strong>Chía · Sabana Norte de Cundinamarca</strong></li>
+            <li><span>Asignatura</span><strong>Ciencia Tecnología e Innovación I · 2026</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tag-strip section-soft" aria-label="Tecnologías destacadas">
+      <div class="container tag-grid reveal">
+        <span>IoT</span>
+        <span>Agricultura inteligente</span>
+        <span>ESP32</span>
+        <span>Raspberry Pi 5</span>
+        <span>OpenCV</span>
+        <span>Machine Learning</span>
+        <span>Visión artificial</span>
+        <span>Sensores ambientales</span>
+        <span>Smart Farming</span>
+        <span>Robótica agrícola</span>
+      </div>
+    </section>
+
+    <section class="story-strip section-soft">
+      <div class="container story-grid reveal" aria-label="Historia visual del proyecto">
+        <article><span>01</span><strong>Problema</strong>
+          <p>Agricultura tradicional con monitoreo manual.</p>
+        </article>
+        <article><span>02</span><strong>Necesidad</strong>
+          <p>Optimización hídrica y lectura continua del cultivo.</p>
+        </article>
+        <article><span>03</span><strong>SmartRovert</strong>
+          <p>Robot autónomo agrícola con sensores y cámara.</p>
+        </article>
+        <article><span>04</span><strong>Resultados</strong>
+          <p>Alertas, datos y decisiones para producción sostenible.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="problema">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Contexto del proyecto</span>
+          <h2>Problema y necesidad</h2>
+          <p>SmartAgriculture responde a retos reales de pequeños productores: falta de monitoreo continuo, uso
+            ineficiente de recursos y detección tardía de afectaciones en cultivos.</p>
+        </div>
+
+        <div class="problem-layout">
+          <article class="academic-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v18M5 8h14M7 16h10M4 12h16"></path>
+              </svg>
+            </div>
+            <h3>Agricultura tradicional con baja trazabilidad</h3>
+            <p>
+              En cultivos de la Sabana Norte de Cundinamarca, el seguimiento depende con frecuencia de revisiones
+              manuales,
+              observación tardía de síntomas y decisiones basadas en experiencia más que en datos. Esta brecha aumenta
+              el
+              desperdicio de agua, fertilizantes y tiempo operativo.
+            </p>
+          </article>
+
+          <div class="problem-metrics reveal reveal-delay">
+            <div>
+              <span>24/7</span>
+              <p>Necesidad de lectura continua en campo.</p>
+            </div>
+            <div>
+              <span>IA</span>
+              <p>Apoyo visual para alertas tempranas.</p>
+            </div>
+            <div>
+              <span>IoT</span>
+              <p>Telemetría agrícola conectada.</p>
+            </div>
+          </div>
+        </div>
+
+        <article class="research-question reveal">
+          <span>Pregunta de investigación</span>
+          <h3>¿Cómo optimizar el diseño, la automatización y la integración tecnológica de SmartRovert para mejorar el
+            monitoreo autónomo de cultivos en la Sabana Norte de Cundinamarca?</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="objetivos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Ruta metodológica</span>
+          <h2>Objetivos</h2>
+          <p>La propuesta organiza el desarrollo alrededor de integración IoT, autonomía, captura de datos y análisis
+            inteligente.</p>
+        </div>
+
+        <article class="goal-main reveal">
+          <div class="goal-number">01</div>
+          <div>
+            <span>Objetivo general</span>
+            <h3>Diseñar y optimizar un robot agrícola autónomo inteligente que integre IoT, visión artificial, sensores
+              ambientales y aprendizaje automático para monitorear cultivos de forma continua y apoyar decisiones
+              agrícolas.</h3>
+          </div>
+        </article>
+
+        <div class="objective-grid">
+          <article class="objective-card reveal"><span>02</span>
+            <h3>Diagnosticar</h3>
+            <p>Analizar las limitaciones estructurales, electrónicas y funcionales del SmartRovert actual.</p>
+          </article>
+          <article class="objective-card reveal"><span>03</span>
+            <h3>Integrar</h3>
+            <p>Conectar sensores ambientales, ESP32 y Raspberry Pi 5 en una arquitectura IoT estable.</p>
+          </article>
+          <article class="objective-card reveal"><span>04</span>
+            <h3>Implementar</h3>
+            <p>Aplicar visión artificial y machine learning para apoyar la detección temprana de enfermedades.</p>
+          </article>
+          <article class="objective-card reveal"><span>05</span>
+            <h3>Validar</h3>
+            <p>Evaluar el desempeño del sistema con pruebas representativas de monitoreo agrícola.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="documentacion">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Centro de documentación</span>
+          <h2>Documentación académica integrada</h2>
+          <p>Biblioteca final con anteproyecto, matrices, marco lógico, recursos visuales y documentos editables, sin depender de las carpetas originales.</p>
+        </div>
+
+        <div class="doc-grid premium-docs">
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Anteproyecto</span>
+            <h3>Anteproyecto SmartAgriculture</h3>
+            <p>Documento formal del proyecto con problema, objetivos, marco conceptual, metodología, presupuesto y enfoque de agricultura inteligente.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/anteproyecto-smartagriculture.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/anteproyecto-smartagriculture.pdf" download>Descargar</a>
+              <a class="download-btn" href="assets/docs/anteproyecto-smartagriculture.docx" target="_blank" rel="noreferrer">DOCX</a>
+            </div>
+          </article>
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Investigación</span>
+            <h3>RAE 20 citas</h3>
+            <p>Compilación de antecedentes y referencias técnicas sobre IoT, visión artificial, robótica agrícola y smart farming.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/RAE-20-CITAS.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/RAE-20-CITAS.pdf" download>Descargar</a>
+              
+            </div>
+          </article>
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Formulación</span>
+            <h3>Tema, pregunta y objetivo</h3>
+            <p>Delimitación académica del tema de investigación, pregunta orientadora y objetivos del sistema SmartRovert.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/tema-pregunta-objetivo.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/tema-pregunta-objetivo.pdf" download>Descargar</a>
+              
+            </div>
+          </article>
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Marco lógico</span>
+            <h3>Matriz de Marco Lógico</h3>
+            <p>Documento completo con indicadores, medios de verificación, supuestos, componentes, actividades y resumen narrativo.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/matriz-marco-logico-smartrovert.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/matriz-marco-logico-smartrovert.pdf" download>Descargar</a>
+              <a class="download-btn" href="assets/docs/matriz-marco-logico-smartrovert.docx" target="_blank" rel="noreferrer">DOCX</a>
+            </div>
+          </article>
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Matriz</span>
+            <h3>Matriz de Consistencia</h3>
+            <p>Relación entre problema, pregunta de investigación, objetivos, variables e hipótesis del proyecto.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/matriz-consistencia.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/matriz-consistencia.pdf" download>Descargar</a>
+              
+            </div>
+          </article>
+
+          <article class="doc-card doc-premium reveal">
+            <div class="doc-card-top">
+              <div class="doc-icon pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"></path><path d="M14 2v5h5M8 13h8M8 17h6M8 9h2"></path></svg></div>
+              <span class="doc-status available">Integrado</span>
+            </div>
+            <span class="doc-category">Matriz</span>
+            <h3>Matriz de Operacionalización</h3>
+            <p>Organización de variables, dimensiones, indicadores, instrumentos y criterios de medición del estudio.</p>
+            <div class="doc-actions">
+              <a class="download-btn" href="assets/docs/matriz-operacionalizacion.pdf" target="_blank" rel="noreferrer">Abrir</a>
+              <a class="download-btn" href="assets/docs/matriz-operacionalizacion.pdf" download>Descargar</a>
+              
+            </div>
+          </article>
+        </div>
+
+        <div class="section-actions reveal">
+          <a class="btn btn-primary" href="pages/documentacion.html">Ver biblioteca completa</a>
+          <a class="btn btn-secondary" href="pages/marco-logico.html">Explorar marco lógico</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="marco-teorico">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Marco teórico aplicado</span>
+          <h2>Conceptos base</h2>
+          <p>Resumen escaneable de los ejes conceptuales que sustentan SmartAgriculture, sin bloques extensos de
+            lectura.</p>
+        </div>
+
+        <div class="theory-grid">
+          <article class="theory-card reveal">
+            <button class="theory-toggle" type="button" aria-expanded="false">
+              <span>Smart Farming e IoT</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="theory-content">
+              <p>La agricultura inteligente conecta sensores, microcontroladores y plataformas de monitoreo para
+                observar variables del cultivo y apoyar decisiones en tiempo real.</p>
+            </div>
+          </article>
+
+          <article class="theory-card reveal">
+            <button class="theory-toggle" type="button" aria-expanded="false">
+              <span>Visión artificial agrícola</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="theory-content">
+              <p>La cámara del sistema permite capturar evidencia visual del cultivo para analizar color, textura, forma
+                y posibles síntomas tempranos.</p>
+            </div>
+          </article>
+
+          <article class="theory-card reveal">
+            <button class="theory-toggle" type="button" aria-expanded="false">
+              <span>Automatización y robótica</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="theory-content">
+              <p>SmartRovert integra movilidad, sensores y procesamiento para reducir tareas repetitivas de inspección y
+                aumentar la cobertura del monitoreo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arquitectura">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Arquitectura del sistema</span>
+          <h2>Flujo técnico SmartRovert</h2>
+          <p>El sistema conecta sensores, cámara, microcontrolador, procesamiento local y visualización para monitoreo
+            agrícola inteligente.</p>
+        </div>
+
+        <div class="architecture-layout">
+          <figure class="architecture-visual reveal">
+            <img src="assets/images/arquitectura-iot.svg"
+              alt="Diagrama IoT de SmartAgriculture con sensores, ESP32, Raspberry Pi 5, cámara y dashboard">
+          </figure>
+
+          <div class="architecture-grid">
+            <article class="architecture-node reveal"><span>01</span>
+              <h3>Captura</h3>
+              <p>Sensores ambientales y cámara recolectan humedad, temperatura, luminosidad e imágenes del cultivo.</p>
+            </article>
+            <article class="architecture-node reveal"><span>02</span>
+              <h3>Control</h3>
+              <p>ESP32 gestiona lecturas, comunicación de bajo consumo y conexión con módulos del sistema.</p>
+            </article>
+            <article class="architecture-node reveal"><span>03</span>
+              <h3>Procesamiento</h3>
+              <p>Raspberry Pi 5 coordina visión artificial, lógica de monitoreo y análisis de datos.</p>
+            </article>
+            <article class="architecture-node reveal"><span>04</span>
+              <h3>Monitoreo</h3>
+              <p>La información se organiza para seguimiento, alertas y futuras decisiones automatizadas.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Galería SmartRovert</span>
+          <h2>Visuales reales y diagramas del sistema</h2>
+          <p>Galería responsive con prototipo, sensores, pruebas y recursos metodológicos migrados desde el proyecto académico.</p>
+        </div>
+
+        <div class="gallery-grid gallery-grid-expanded">
+          
+          <figure class="image-card reveal">
+            <img src="assets/images/robot/smartrovert-banner.png" alt="SmartRovert SmartRovert">
+            <figcaption><strong>SmartRovert</strong><span>Vista principal del sistema SmartRovert.</span></figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <img src="assets/images/robot/prototipo1.jpg" alt="Prototipo SmartRovert">
+            <figcaption><strong>Prototipo</strong><span>Evidencia visual del prototipo físico.</span></figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <img src="assets/images/robot/pruebas.jpg" alt="Pruebas SmartRovert">
+            <figcaption><strong>Pruebas</strong><span>Validación y pruebas de componentes.</span></figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <img src="assets/images/robot/sensores.jpg" alt="Sensores SmartRovert">
+            <figcaption><strong>Sensores</strong><span>Módulos de monitoreo ambiental.</span></figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <img src="assets/images/marco-logico/arquitectura-monitoreo.png" alt="Arquitectura de monitoreo SmartRovert">
+            <figcaption><strong>Arquitectura de monitoreo</strong><span>Flujo técnico para recolección y validación.</span></figcaption>
+          </figure>
+          <figure class="image-card reveal">
+            <img src="assets/images/marco-logico/mapa-actores.png" alt="Mapa de actores SmartRovert">
+            <figcaption><strong>Mapa de actores</strong><span>Actores académicos, agrícolas y tecnológicos.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="marco-logico">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Planificación científica</span>
+          <h2>Marco lógico y matrices integradas</h2>
+          <p>El contenido académico fue reconstruido como módulos de lectura, tablas responsivas, diagramas descargables y documentos verificables.</p>
+        </div>
+
+        <div class="matrix-dashboard">
+          <article class="metric-panel reveal">
+            <span>09</span>
+            <strong>Pasos metodológicos</strong>
+            <p>Involucrados, problema, objetivos, estrategia, EAP, resumen narrativo, indicadores, verificación y supuestos.</p>
+          </article>
+          <article class="metric-panel reveal">
+            <span>15</span>
+            <strong>Diagramas integrados</strong>
+            <p>Árboles, mapas, arquitectura de monitoreo, riesgos, indicadores y flujo de verificación.</p>
+          </article>
+          <article class="metric-panel reveal">
+            <span>03</span>
+            <strong>Matrices académicas</strong>
+            <p>Marco lógico, consistencia y operacionalización preservadas en PDF con vistas modernas.</p>
+          </article>
+        </div>
+
+        <div class="table-shell reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Nivel</th>
+                <th>Resumen narrativo</th>
+                <th>Indicadores</th>
+                <th>Medios de verificación</th>
+                <th>Supuestos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fin</td>
+                <td>Contribuir a una agricultura eficiente, inteligente y sostenible.</td>
+                <td>Mejora en gestión de recursos, trazabilidad y supervisión agrícola.</td>
+                <td>Reportes, bitácoras, evidencias fotográficas y documentación técnica.</td>
+                <td>Interés de agricultores en tecnologías inteligentes.</td>
+              </tr>
+              <tr>
+                <td>Propósito</td>
+                <td>Automatizar el monitoreo agrícola mediante SmartRovert.</td>
+                <td>Monitoreo remoto, captura ambiental e imágenes de cultivo operativas.</td>
+                <td>Dashboard, registros IoT, pruebas funcionales y capturas de monitoreo.</td>
+                <td>Conectividad suficiente y suministro eléctrico estable.</td>
+              </tr>
+              <tr>
+                <td>Componentes</td>
+                <td>Sensores IoT, automatización agrícola, visión artificial, monitoreo remoto y base de datos.</td>
+                <td>Sensores instalados, cámaras operativas, plataforma funcional y datos almacenados.</td>
+                <td>Pruebas de funcionamiento, evidencias visuales, base de datos y reportes.</td>
+                <td>Compatibilidad tecnológica y estabilidad del sistema IoT.</td>
+              </tr>
+              <tr>
+                <td>Actividades</td>
+                <td>Instalar sensores, configurar automatización, integrar cámaras e implementar monitoreo remoto.</td>
+                <td>Fases ejecutadas según cronograma y entregables del proyecto.</td>
+                <td>Informes, repositorio, cronograma, pruebas y sustentación académica.</td>
+                <td>Recursos tecnológicos y entornos de validación disponibles.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-actions reveal">
+          <a class="btn btn-primary" href="pages/marco-logico.html">Ver marco lógico completo</a>
+          <a class="btn btn-secondary" href="pages/matrices.html">Ver matrices</a>
+          <a class="btn btn-secondary" href="pages/metodologia.html">Ver metodología</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="tecnologias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Stack tecnológico</span>
+          <h2>Tecnologías</h2>
+          <p>Componentes clave para capturar datos, procesar imágenes, automatizar lectura y habilitar monitoreo
+            agrícola inteligente.</p>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card reveal"><span class="tech-icon">E32</span>
+            <h3>ESP32</h3>
+            <p>Lectura de sensores, conectividad IoT y control de bajo consumo.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">RP5</span>
+            <h3>Raspberry Pi 5</h3>
+            <p>Procesamiento local, coordinación del sistema y análisis visual.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">CV</span>
+            <h3>OpenCV</h3>
+            <p>Inspección de imágenes del cultivo para identificar patrones visuales.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">IoT</span>
+            <h3>IoT</h3>
+            <p>Telemetría ambiental para monitoreo remoto y trazabilidad.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">ML</span>
+            <h3>Machine Learning</h3>
+            <p>Modelos para apoyar clasificación, alertas y análisis predictivo.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">SEN</span>
+            <h3>Sensores ambientales</h3>
+            <p>Humedad, temperatura, luminosidad y variables críticas del cultivo.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">AI</span>
+            <h3>Visión artificial</h3>
+            <p>Captura y lectura visual para detección temprana de anomalías.</p>
+          </article>
+          <article class="tech-card reveal"><span class="tech-icon">AUT</span>
+            <h3>Automatización</h3>
+            <p>Reducción de tareas manuales mediante monitoreo autónomo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="metodologia">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Metodología aplicada</span>
+          <h2>Ruta de investigación SmartRovert</h2>
+          <p>La planeación integra diagnóstico de actores, análisis causal, objetivos, estrategia, EAP, indicadores, verificaciones y supuestos críticos.</p>
+        </div>
+        <div class="method-mini-grid">
+          <article class="method-mini reveal"><span>01</span><h3>Diagnóstico</h3><p>Actores, problema central y causas del monitoreo agrícola manual.</p></article><article class="method-mini reveal"><span>02</span><h3>Diseño estratégico</h3><p>Objetivos, medios, acciones, componentes y actividades tecnológicas.</p></article><article class="method-mini reveal"><span>03</span><h3>Control y validación</h3><p>Indicadores, medios de verificación, riesgos y supuestos de sostenibilidad.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Evolución del proyecto</span>
+          <h2>Timeline SmartAgriculture</h2>
+          <p>Ruta visual del avance desde la formulación del problema hasta una futura versión SmartRovert 2.0.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>01</span>
+            <h3>Idea inicial</h3>
+            <p>Identificación de una necesidad de monitoreo agrícola más autónoma, precisa y accesible.</p>
+          </article>
+          <article class="timeline-item reveal"><span>02</span>
+            <h3>Investigación</h3>
+            <p>Revisión de antecedentes, RAE, tecnologías IoT, visión artificial y robótica agrícola.</p>
+          </article>
+          <article class="timeline-item reveal"><span>03</span>
+            <h3>Desarrollo SmartRovert</h3>
+            <p>Diseño de arquitectura con sensores, cámara, ESP32, Raspberry Pi 5 y procesamiento local.</p>
+          </article>
+          <article class="timeline-item reveal"><span>04</span>
+            <h3>Pruebas</h3>
+            <p>Validación progresiva de lectura ambiental, captura visual y comportamiento del prototipo.</p>
+          </article>
+          <article class="timeline-item reveal"><span>05</span>
+            <h3>Optimización</h3>
+            <p>Ajuste de estructura, integración, autonomía y estabilidad del monitoreo.</p>
+          </article>
+          <article class="timeline-item reveal"><span>06</span>
+            <h3>SmartRovert 2.0</h3>
+            <p>Proyección hacia análisis predictivo, mayor autonomía y visualización avanzada de datos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="impacto">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Impacto esperado</span>
+          <h2>Agricultura inteligente sostenible</h2>
+          <p>SmartAgriculture busca crear beneficios económicos, ambientales, sociales, tecnológicos y académicos desde
+            una solución aplicada.</p>
+        </div>
+
+        <div class="impact-grid impact-grid-wide">
+          <article class="impact-card reveal">
+            <div class="impact-top"><span>Económico</span><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 17 9 11l4 4 8-8"></path>
+                <path d="M14 7h7v7"></path>
+              </svg></div>
+            <h3>Optimización de recursos</h3>
+            <p>Reducción de costos asociados a agua, fertilizantes y monitoreo manual.</p>
+          </article>
+          <article class="impact-card reveal">
+            <div class="impact-top"><span>Ambiental</span><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-11a8 8 0 1 0-16 0c0 7 8 11 8 11Z"></path>
+                <path d="M9 11c2.5.2 4.3-1.1 5.5-3.7.8 2.7-.2 5.2-2.6 6.9-1.3-1.2-2.3-2-4-1.9.2-.5.6-.9 1.1-1.3Z">
+                </path>
+              </svg></div>
+            <h3>Uso eficiente del agua</h3>
+            <p>Datos de campo para riego más responsable y menor desperdicio de insumos.</p>
+          </article>
+          <article class="impact-card reveal">
+            <div class="impact-top"><span>Social</span><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg></div>
+            <h3>Apoyo a productores</h3>
+            <p>Herramienta de bajo costo relativo para pequeños agricultores de la región.</p>
+          </article>
+          <article class="impact-card reveal">
+            <div class="impact-top"><span>Tecnológico</span><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2v6M12 16v6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24">
+                </path>
+              </svg></div>
+            <h3>Integración IoT + IA</h3>
+            <p>Prototipo académico con visión artificial, sensórica y automatización aplicada.</p>
+          </article>
+          <article class="impact-card reveal">
+            <div class="impact-top"><span>Académico</span><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 10 12 5 2 10l10 5 10-5Z"></path>
+                <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+              </svg></div>
+            <h3>Investigación aplicada</h3>
+            <p>Base para documentación, experimentación, sustentación y futuras mejoras del sistema.</p>
+          </article>
+        </div>
+
+        <div class="ods-panel reveal">
+          <div>
+            <span class="eyebrow">Agenda 2030</span>
+            <h3>Objetivos de Desarrollo Sostenible</h3>
+          </div>
+          <div class="ods-grid">
+            <article><span>ODS 2</span>
+              <p>Hambre cero y agricultura sostenible.</p>
+            </article>
+            <article><span>ODS 6</span>
+              <p>Agua limpia, saneamiento y uso eficiente.</p>
+            </article>
+            <article><span>ODS 9</span>
+              <p>Industria, innovación e infraestructura.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="referencias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Base bibliográfica</span>
+          <h2>Referencias APA</h2>
+          <p>Fuentes técnicas y académicas que soportan el enfoque de robótica agrícola, IoT, visión artificial e
+            innovación tecnológica.</p>
+        </div>
+
+        <div class="paper-list reveal">
+          <article><span>01</span>
+            <p>Food and Agriculture Organization of the United Nations. (2023). <em>The state of food and agriculture:
+                Leveraging automation in agriculture for transforming agrifood systems</em>. FAO.</p>
+          </article>
+          <article><span>02</span>
+            <p>Kamilaris, A., & Prenafeta-Boldú, F. X. (2018). Deep learning in agriculture: A survey. <em>Computers and
+                Electronics in Agriculture, 147</em>, 70-90.</p>
+          </article>
+          <article><span>03</span>
+            <p>Liakos, K. G., Busato, P., Moshou, D., Pearson, S., & Bochtis, D. (2018). Machine learning in
+              agriculture: A review. <em>Sensors, 18</em>(8), 2674.</p>
+          </article>
+          <article><span>04</span>
+            <p>Wolfert, S., Ge, L., Verdouw, C., & Bogaardt, M. J. (2017). Big data in smart farming: A review.
+              <em>Agricultural Systems, 153</em>, 69-80.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32">
+              <path d="M16 3.5 27.2 10v12L16 28.5 4.8 22V10L16 3.5Z"></path>
+              <path
+                d="M10.8 17.2c4.8.1 8.2-2.3 10.4-7.1 1.3 5-.5 9.5-4.8 12.7-2.4-2.2-4.2-3.6-7.2-3.5.4-.7.9-1.4 1.6-2.1Z">
+              </path>
+            </svg>
+          </span>
+          <span>SMARTAGRICULTURE</span>
+        </a>
+        <p>Universidad de Cundinamarca<br>Ingeniería de Sistemas y Computación</p>
+      </div>
+
+      <div class="footer-links" aria-label="Enlaces de plataforma">
+        <a href="pages/marco-logico.html">Marco lógico</a>
+        <a href="pages/matrices.html">Matrices</a>
+        <a href="pages/metodologia.html">Metodología</a>
+        <a href="pages/documentacion.html">Documentación</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>SMARTAGRICULTURE © 2026</span>
+      <span>SmartRovert · Sabana Norte de Cundinamarca</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

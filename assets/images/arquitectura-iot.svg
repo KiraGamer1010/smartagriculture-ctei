@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitectura IoT de SmartAgriculture</title>
+  <desc id="desc">Diagrama técnico de sensores, ESP32, Raspberry Pi, cámara, nube y monitoreo.</desc>
+  <defs>
+    <linearGradient id="node" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#2E7D32"/>
+      <stop offset="1" stop-color="#1565C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" rx="28" fill="#FFFFFF"/>
+  <g opacity=".36" stroke="#DDE5DD" stroke-width="2">
+    <path d="M100 110h760M100 230h760M100 350h760M100 470h760"/>
+    <path d="M160 70v500M320 70v500M480 70v500M640 70v500M800 70v500"/>
+  </g>
+  <g fill="none" stroke="#42A5F5" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 14">
+    <path d="M230 330h160M570 330h160M480 226v-92M480 434v86M350 220l-76-72M610 220l76-72"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="366" y="244" width="228" height="172" rx="26" fill="url(#node)"/>
+      <text x="480" y="320" font-size="28" font-weight="800" fill="#FFFFFF">Raspberry Pi 5</text>
+      <text x="480" y="360" font-size="18" font-weight="600" fill="#F4F7F2">Procesamiento IA</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#DDE5DD" stroke-width="5">
+      <rect x="92" y="256" width="210" height="148" rx="22"/>
+      <rect x="658" y="256" width="210" height="148" rx="22"/>
+      <rect x="376" y="64" width="208" height="124" rx="22"/>
+      <rect x="376" y="476" width="208" height="116" rx="22"/>
+      <rect x="128" y="78" width="188" height="118" rx="22"/>
+      <rect x="644" y="78" width="188" height="118" rx="22"/>
+    </g>
+    <g fill="#1B1F1E" font-weight="800" font-size="24">
+      <text x="197" y="322">Sensores</text>
+      <text x="763" y="322">Cámara</text>
+      <text x="480" y="124">ESP32</text>
+      <text x="480" y="535">Dashboard</text>
+      <text x="222" y="138">Cultivo</text>
+      <text x="738" y="138">Nube IoT</text>
+    </g>
+    <g fill="#5F6B68" font-weight="600" font-size="16">
+      <text x="197" y="352">humedad · clima</text>
+      <text x="763" y="352">visión artificial</text>
+      <text x="480" y="154">control y lectura</text>
+      <text x="480" y="564">monitoreo 24/7</text>
+    </g>
+  </g>
+</svg>

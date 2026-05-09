@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Sensores ambientales en cultivo</title>
+  <desc id="desc">Red de sensores ambientales conectados a un cultivo inteligente.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F7F2"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#42A5F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".32" stroke="#DDE5DD" stroke-width="2">
+    <path d="M0 126h960M0 252h960M0 378h960M0 504h960"/>
+    <path d="M120 0v640M240 0v640M360 0v640M480 0v640M600 0v640M720 0v640M840 0v640"/>
+  </g>
+  <g fill="none" stroke="#2E7D32" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M170 526c37-92 120-92 158 0M249 526V334M249 395c-74-66-125-35-157 24M252 436c81-76 137-35 174 26"/>
+    <path d="M615 526c37-92 120-92 158 0M694 526V334M694 395c-74-66-125-35-157 24M697 436c81-76 137-35 174 26"/>
+  </g>
+  <g>
+    <rect x="395" y="174" width="170" height="206" rx="24" fill="#FFFFFF" stroke="#DDE5DD" stroke-width="5"/>
+    <rect x="423" y="204" width="114" height="66" rx="14" fill="url(#chip)"/>
+    <circle cx="452" cy="318" r="16" fill="#2E7D32"/>
+    <circle cx="508" cy="318" r="16" fill="#1565C0"/>
+    <path d="M372 224h-74m-50 0h-62M588 224h74m50 0h62M372 314h-88m-50 0h-76M588 314h88m50 0h76" fill="none" stroke="#1565C0" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#FFFFFF" stroke="#42A5F5" stroke-width="5">
+      <circle cx="248" cy="224" r="24"/>
+      <circle cx="712" cy="224" r="24"/>
+      <circle cx="234" cy="314" r="24"/>
+      <circle cx="726" cy="314" r="24"/>
+    </g>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="700" font-size="26" fill="#1B1F1E">
+    <text x="408" y="438">Humedad</text>
+    <text x="408" y="476">Temperatura</text>
+    <text x="408" y="514">Luminosidad</text>
+  </g>
+</svg>
