@@ -131,7 +131,7 @@ const setupAccordions = () => {
 
 const setupSoftPointerHighlights = () => {
   const interactiveItems = document.querySelectorAll(
-    ".btn, .download-btn, .doc-card, .tech-card, .impact-card, .objective-card, .image-card, .architecture-node, .timeline-item, .resource-card, .fusion-card, .method-step, .matrix-card, .asset-card"
+    ".btn, .download-btn, .doc-card, .tech-card, .impact-card, .objective-card, .image-card, .architecture-node, .timeline-item, .resource-card, .fusion-card, .method-step, .matrix-card, .asset-card, .video-card"
   );
 
   interactiveItems.forEach((item) => {
